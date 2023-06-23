@@ -1,0 +1,25 @@
+<h2>Product List</h2>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Qty</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let products of product">
+            <td>{{products.id}}</td>
+            <td>{{products.productid}}</td>
+            <td>{{products.productname}}</td>
+            <td>{{products.qty}}</td>
+            <td> <button class="btn btn-danger" (click)="deleteProduct(products.id)">Delete</button>
+            &nbsp;
+              <button class="btn btn-info" (click)="editProduct(products.id)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  
