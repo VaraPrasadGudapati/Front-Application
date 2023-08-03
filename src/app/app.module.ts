@@ -13,6 +13,7 @@ const routes:Routes=[
   {path:'', redirectTo:'orders',pathMatch:'full'},
   {path:'order', component:CreateproductComponent},
   {path:'edit/:id', component:ProducteditComponent}
+  
 
 ]
 @NgModule({
